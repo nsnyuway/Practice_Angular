@@ -1,0 +1,16 @@
+<main class="main">
+  <div class="content">
+    <div>
+      <h3>Todo List</h3>
+      <ul>
+        <li *ngFor="let todo of todos">
+          <strong>{{ todo.id }}:</strong> {{ todo.title }} 
+          <span>
+            - {{ todo.completed ? 'Completed' : 'Pending' }}
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>                                              
+</main>
+
