@@ -1,0 +1,32 @@
+<main class="main">
+  <div class="content">
+    <h3>Todo List</h3>
+    <input
+      type="text"
+      placeholder="Search todos... (write title to search)"
+      (input) = "handleInputChange($event)"
+      class="search-bar"
+    />
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>UserId</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let todo of filteredTodos">
+            <td>{{ todo.userId }}</td>
+            <td>{{ todo.id }}</td>
+            <td>{{ todo.title }}</td>
+            <td>{{ todo.completed ? "Completed" : "Pending" }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>

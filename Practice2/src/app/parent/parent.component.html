@@ -1,0 +1,12 @@
+<h1>Parent Component</h1>
+<p>Message from Child: {{ receivedMessage }}</p>
+
+<app-child (messageEvent)="receiveMessage($event)"></app-child>
+
+<input [(ngModel)]="parentMessage" placeholder="Update Parent Message" />
+<div>{{ parentMessage }}</div>
+<button (click)="updateMessage()">Update Parent Message in Service</button>
+
+
+<!-- api call  -->
+<!-- https://jsonplaceholder.typicode.com/todos -->
