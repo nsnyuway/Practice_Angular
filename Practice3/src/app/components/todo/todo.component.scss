@@ -1,0 +1,52 @@
+
+main {
+  width: 100%;
+  min-height: 100%;
+  display: block;
+  padding: 1rem;
+  box-sizing: inherit;
+  position: relative;
+}
+
+h3 {
+  font-size: larger;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.search-bar {
+  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid var(--gray-400);
+}  
+
+.table-container {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.timeout-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+}
